@@ -1,0 +1,45 @@
+﻿body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    height:25vh;
+
+}
+.container header {
+        background-color: #4BACC6;
+        height:80%;
+        color:white;
+        display:flex;
+        align-items:flex-end;
+        justify-content:end;
+        font-size:4rem;
+        
+    }
+ .sidebar {
+       background-color:antiquewhite;
+       
+    }
+.nav {
+    background-color: #9BBB59;
+    height: 14vh;
+
+
+}
+ .nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+ .content{
+     height:35vh;
+ }
+footer {
+    background-color: #4BACC6;
+    height: 16vh;
+}

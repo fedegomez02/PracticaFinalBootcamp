@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            SISTEMA EMPLEADO
+        </header>
+        <div class="sidebar">
+            @RenderSection("sidebar", required: true)
+        </div>
+    </div>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li>
+                    @Html.ActionLink("Home", "Index", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("Cargar un nuevo Empleado", "Create", "Index")
+                </li>
+              
+            </ul>
+        </nav>
+    </div>
+      
+       <article id="content">
+                @RenderBody()
+       </article>
+       <footer>
+                Footer
+       </footer>
+       
+    
+
+</body>
+</html>

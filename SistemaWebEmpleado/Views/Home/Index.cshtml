@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@section sidebar {
+    Pagina principal
+}
+<h2>Index</h2>
+<div>
+    <h3>@ViewBag.Fecha</h3>
+    <h1>Bienvenidos a mi sitio web</h1>
+    <p>
+        @Html.ActionLink("Ir al listado de Empleados", "Index", "Empleado")
+    </p>
+</div>
